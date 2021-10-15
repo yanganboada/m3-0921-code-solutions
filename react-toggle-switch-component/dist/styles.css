@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bolder;
+  color: black;
+}
+
+.container {
+  margin: 20% auto;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  width: 65%;
+  border: 1px solid grey;
+  background-color: lightgray;
+  border-radius: 50px;
+
+}
+
+.btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.on {
+  background-color: greenyellow;
+  justify-content: flex-end;
+}
+
+.off{
+  background-color: lightgray;
+}
