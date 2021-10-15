@@ -1,0 +1,56 @@
+*{
+  margin: 0 auto;
+}
+
+div {
+  display: flex;
+}
+
+button {
+  margin: 20% auto;
+  padding: 20px 50px;
+
+  border: 1px black solid;
+  border-radius: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+button:active{
+  padding: 19px 49px;
+}
+
+.black{
+  background-color: black;
+  color: white;
+}
+
+.purple{
+  background-color: purple;
+  color: white;
+}
+
+.indigo{
+  background-color: indigo;
+  color: white;
+}
+
+.red{
+  background-color: red;
+  color: white;
+}
+
+.orange{
+  background-color: orange;
+  color: black;
+}
+
+.yellow{
+  background-color: yellow;
+  color: black;
+}
+
+.white{
+  background-color: white;
+  color: black;
+}
