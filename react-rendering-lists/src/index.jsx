@@ -12,7 +12,7 @@ const pokedex = [
 function CreatList(props) {
   return (
     <ul>
-      {props.pokedex.map((x, i) => <li key={i}>{x.name}</li>)}
+      {props.pokedex.map(x => <li key={x.number}>{x.name}</li>)}
     </ul>
   );
 }
