@@ -3,30 +3,31 @@ import ReactDOM from 'react-dom';
 
 class NewsletterForm extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       val: ''
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleChange(e) {
-    this.setState({ val: e.target.value });
+    this.setState({ val: e.target.value })
   }
 
   handleClick(e) {
-    e.preventDefault();
+    e.preventDefault()
+    console.log(this.state)
   }
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleClick}>
         <label>
           Email:
-          <input type='text' name='Email' onChange={this.handleChange} />
+          <input type='text' name='Email' value={this.state.val} onChange={this.handleChange} />
         </label>
-        <input type='submit' value='Sign Up' onSubmit={this.handleClick} />
+        <input type='submit' value='Sign Up' />
       </form>
     );
   }
