@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+}
+
+.container{
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch{
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 5px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second{
+  font-size: 3em;
+}
+
+.control{
+  cursor: pointer;
+}
