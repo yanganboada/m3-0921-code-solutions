@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+}
+
+form {
+  margin: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.icon{
+  padding: 0 5px;
+}
+
+.hide{
+  display: none;
+}
+
+.notes{
+  padding: 5px 0;
+  color: red;
+}
