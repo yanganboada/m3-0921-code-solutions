@@ -12,8 +12,9 @@ class Accordion extends React.Component{
   }
 
   handleClick(currentId){
-    this.state.id !== currentId
-    this.setState({ id: currentId })
+    this.state.id === currentId
+      ? this.setState({ id: null })
+      : this.setState({ id: currentId })
   }
 
   render(){
@@ -26,7 +27,7 @@ class Accordion extends React.Component{
               onClick={() => this.handleClick(x.id)}>
               {x.subject}
             </h3>
-            <p className={this.state.id === x.id ? 'description' : 'hide'}>
+            <p className={this.state.id === x.id ? 'description' : 'description hide'}>
               {x.description}
             </p>
           </div>
